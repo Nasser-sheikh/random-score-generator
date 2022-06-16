@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #224066;
+      min-width: 100vh;
+      min-height: 100%;
+    }
+    h1 {
+      text-align: center;
+      color: aliceblue;
+    }
+    .score {
+      background-color: rgb(204, 204, 204);
+      border-radius: 12px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      display: flex;
+    }
+    .score h2 {
+      text-align: center;
+      /* padding: 3%;
+      position: relative;
+      left: 140px; */
+      padding: 6%;
+    }
+    .generate {
+      border-radius: 13px;
+      border: none;
+      color: white;
+      background-color: rgb(39, 37, 37);
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 700;
+      position: relative;
+      left: 45%;
+      width: 100px;
+      padding: 1%;
+    }
+    .generate:hover {
+      background-color: rgb(22, 22, 22);
+    }
+    .teams {
+      display: flex;
+      padding-left: 26%;
+    }
+    @media screen and (max-width: 700px) {
+      .teams {
+        display: flex;
+        padding-left: 8%;
+      }
+    }
+  </style>
+  <body>
+    <h1>Random Score Generator</h1>
+    <button class="generate">GO!</button>
+    <div class="score">
+      <div class="teams">
+        <h2>Alhilal</h2>
+        <h2 class="score-1">0</h2>
+        <h2>-</h2>
+        <h2 class="score-2">0</h2>
+        <h2>Alnasar</h2>
+      </div>
+    </div>
+
+    <script src="random.js"></script>
+  </body>
+</html>
